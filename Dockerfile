@@ -10,4 +10,3 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 COPY . /app
 
 CMD ["python3", "app.py"]
-# CMD ["flask", "--app", "app.py", "--debug", "run"]

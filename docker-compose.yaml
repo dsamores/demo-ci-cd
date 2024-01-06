@@ -1,7 +1,7 @@
 services:
   web: 
     build:
-      context: app
+      context: .
       target: builder
     stop_signal: SIGINT
     ports:
