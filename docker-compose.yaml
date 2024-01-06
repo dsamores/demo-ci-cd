@@ -2,9 +2,8 @@ services:
   web: 
     build:
       context: .
-      target: builder
     stop_signal: SIGINT
     ports:
-      - 5000:5000
+      - 8080:8080
     volumes:
       - ./app:/app
