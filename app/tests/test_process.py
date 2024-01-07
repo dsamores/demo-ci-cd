@@ -9,7 +9,7 @@ from app.process import num_characters, num_words, text_analysis
     [
         ("texto", 5),
         ("", 0),
-        ("texto con varias palabras", 26),
+        ("texto con varias palabras", 25),
     ],
 )
 def test_num_characters(text, expected):
