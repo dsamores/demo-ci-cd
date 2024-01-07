@@ -1,2 +1,6 @@
 flask
 gunicorn
+pytest
+pylint
+flake8
+isort
