@@ -1,7 +1,7 @@
 """Routes for website."""
 from flask import Flask, render_template, request
 
-from app.process import text_analysis
+from process import text_analysis  # pylint: disable=import-error
 
 app = Flask(__name__)
 

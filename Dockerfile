@@ -15,4 +15,4 @@ EXPOSE 8080
 
 # Command to start the server
 # CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
-CMD ["python", "app.py"]
+CMD ["python", "-m" , "app"]
