@@ -15,7 +15,7 @@ def num_vowels(text):
     """Cuenta el numero de vocales."""
     count = 0
     for c in text:
-        if c in "aeiou":
+        if c in "aeiouAEIOU":
             count += 1
     return count
 
