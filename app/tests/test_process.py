@@ -35,7 +35,11 @@ def test_num_words(text, expected):
 def test_text_analysis():
     """Pruebas de la funcion text_analysis."""
     assert text_analysis("Texto de ejemplo") == (
+        "Texto: Texto de ejemplo"
+        "<br>"
         "Texto tiene 16 caracteres"
         "<br>"
         "Texto tiene 3 palabras"
+        "<br>"
+        "Texto tiene 6 vocales"
     )
