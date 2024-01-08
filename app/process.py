@@ -11,9 +11,21 @@ def num_words(text):
     return len(text.split())
 
 
+def num_vowels(text):
+    count = 0
+    for c in text:
+        if c in "aeiou":
+            count += 1
+    return count
+
+
 def text_analysis(text):
     """Hace analisis del texto."""
-    result = f"Texto tiene {num_characters(text)} caracteres"
+    result = f"Texto: {text}"
+    result += "<br>"
+    result += f"Texto tiene {num_characters(text)} caracteres"
     result += "<br>"
     result += f"Texto tiene {num_words(text)} palabras"
+    result += "<br>"
+    result += f"Texto tiene {num_vowels(text)} vocales"
     return result
