@@ -22,6 +22,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
+          tags: demo/app:latest
 
   format:
     runs-on: ubuntu-latest
