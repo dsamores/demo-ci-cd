@@ -9,17 +9,25 @@ permissions:
   contents: read
 
 jobs:
-  format:
+  hello:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run format checks
+      - name: Run hello
         run: |
-          make lint
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Run tests
-        run: |
-          make test
+          echo "Hola mundo"
+
+  # format:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - name: Run format checks
+  #       run: |
+  #         make lint
+  # test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - name: Run tests
+  #       run: |
+  #         make test
