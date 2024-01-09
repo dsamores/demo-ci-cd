@@ -9,13 +9,13 @@ permissions:
   contents: read
 
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run hello
+      - name: Run build
         run: |
-          echo "Hola mundo"
+          make build
 
   # format:
   #   runs-on: ubuntu-latest
