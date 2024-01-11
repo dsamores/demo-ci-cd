@@ -20,6 +20,14 @@ def num_vowels(text):
     return count
 
 
+def average_word_size(text):
+    """Saca la longitud promedio de las palabras."""
+    word_lengths = []
+    for word in text.split():
+        word_lengths.append(len(word))
+    return sum(word_lengths) // len(word_lengths)
+
+
 def text_analysis(text):
     """Hace analisis del texto."""
     result = f"Texto: {text}"
@@ -29,4 +37,8 @@ def text_analysis(text):
     result += f"Texto tiene {num_words(text)} palabras"
     result += "<br>"
     result += f"Texto tiene {num_vowels(text)} vocales"
+    result += "<br>"
+    result += (
+        f"La longitud promedio de las palabras es {average_word_size(text)}"
+    )
     return result

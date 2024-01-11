@@ -42,6 +42,8 @@ def test_text_analysis():
         "Texto tiene 3 palabras"
         "<br>"
         "Texto tiene 6 vocales"
+        "<br>"
+        "La longitud promedio de las palabras es 4"
     )
 
 
