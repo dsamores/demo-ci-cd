@@ -6,7 +6,7 @@ run:
 
 test:
 	docker build -t web-tests .
-	docker run web-tests pytest
+	docker run web-tests pytest --cov=app --cov-fail-under=80
 
 lint:
 	docker build -t web-tests .
