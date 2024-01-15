@@ -1,7 +1,13 @@
 """Pruebas del archivo process."""
 import pytest
 
-from app.process import num_characters, num_words, text_analysis, num_vowels, num_upper
+from app.process import (
+    num_characters,
+    num_words,
+    text_analysis,
+    num_vowels,
+    num_upper,
+)
 
 
 @pytest.mark.parametrize(
