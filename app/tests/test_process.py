@@ -1,7 +1,7 @@
 """Pruebas del archivo process."""
 import pytest
 
-from app.process import num_characters, num_words, text_analysis, num_vowels
+from app.process import num_characters, num_words, text_analysis, num_vowels, num_upper
 
 
 @pytest.mark.parametrize(
@@ -42,6 +42,8 @@ def test_text_analysis():
         "Texto tiene 3 palabras"
         "<br>"
         "Texto tiene 6 vocales"
+        "<br>"
+        "Texto tiene 1 mayúsculas"
     )
 
 
@@ -57,3 +59,18 @@ def test_text_analysis():
 def test_num_vowels(text, expected):
     """Pruebas de la funcion num_vowels."""
     assert num_vowels(text) == expected
+
+
+@pytest.mark.parametrize(
+    "text,expected",
+    [
+        ("texto de ejemplo", 0),
+        ("", 0),
+        ("Texto mas largo con mas palabras", 1),
+        ("CI y CD", 4),
+        ("TODO MAYUSCULAS", 14),
+    ],
+)
+def test_num_upper(text, expected):
+    """Pruebas de la funcion num_upper."""
+    assert num_upper(text) == expected
