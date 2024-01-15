@@ -20,6 +20,7 @@ def num_vowels(text):
     return count
 
 def num_upper(text):
+    """Cuenta el numero de mayusculas."""
     count = 0
     for c in text:
         if c.isupper():
