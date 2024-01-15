@@ -19,6 +19,13 @@ def num_vowels(text):
             count += 1
     return count
 
+def num_upper(text):
+    count = 0
+    for c in text:
+        if c.isupper():
+            count += 1
+    return count
+
 
 def text_analysis(text):
     """Hace analisis del texto."""
@@ -29,4 +36,6 @@ def text_analysis(text):
     result += f"Texto tiene {num_words(text)} palabras"
     result += "<br>"
     result += f"Texto tiene {num_vowels(text)} vocales"
+    result += "<br>"
+    result += f"Texto tiene {num_upper(text)} mayúsculas"
     return result
